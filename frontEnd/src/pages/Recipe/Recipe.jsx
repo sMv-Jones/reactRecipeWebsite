@@ -1,24 +1,31 @@
-import {RecipeCard} from "../../components/index"
-function Recipe() {
+import { RecipeCard } from "../../components/index";
+import './recipe.css';
 
+function Recipe() {
     return (
-        <>
+        <><div className="recipe-block">
             <div>
-                <h1>Create a new Recipe</h1>
-                <form>
-                    <label htmlFor="title">Title</label> <input type="text" name="title" id="title" /><br />
-                    <label htmlFor="ingredient">Ingredient</label> <input type="text" name="ingredient" id="ingredient" /><br />
-                    <label htmlFor="description">Description</label> <input type="text" name="description" id="description" /><br />
-                    <button type="submit">Submit</button>
+                <h1 className="recipe-heading">Create a new Recipe</h1>
+                <form className="recipe-form">
+                    <label htmlFor="title" className="recipe-label">Title</label>
+                    <input type="text" name="title" id="title" className="recipe-input" /><br />
+
+                    <label htmlFor="ingredient" className="recipe-label">Ingredient</label>
+                    <input type="text" name="ingredient" id="ingredient" className="recipe-input" /><br />
+
+                    <label htmlFor="description" className="recipe-label">Description</label>
+                    <input type="text" name="description" id="description" className="recipe-input" /><br />
+
+                    <button type="submit" id="recipe-submit">Submit</button>
                 </form>
             </div>
             <div>
-                This is the Recipe
-                {
-                }
+                <h2 className="recipe-heading">Recipes</h2>
+                {/* RecipeCard components will go here */}
             </div>
+        </div>
         </>
-    )
+    );
 }
 
 export default Recipe;
