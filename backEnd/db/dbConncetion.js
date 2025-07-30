@@ -1,1 +1,0 @@
-//good practice to create connection and export the connetion and return process.exit(1) if an error is encountered
