@@ -5,13 +5,13 @@ import { Home, Login, Recipe, Register } from "./pages/index.js"
 import "./main.css"
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <><Route path='' element={<App />}>
-    <Route path='' element={<Home />} />
-
-    <Route path='/recipe' element={<Recipe />} />
-  </Route>
-  <Route path='/login' element={<Login />} />
-  <Route path='/register' element={<Register />} />
+  <>
+    <Route path='' element={<App />}>
+      <Route path='' element={<Home />} />
+      <Route path='/recipe' element={<Recipe />} />
+    </Route>
+    <Route path='/login' element={<Login />} />
+    <Route path='/register' element={<Register />} />
   </>
 ))
 
