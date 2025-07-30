@@ -18,9 +18,6 @@ app.get('/recipes/:id', (req, res) => {
 app.post('/recipes', (req, res) => {
     res.send("Hello");
 });
-app.put('/recipes/:id', (req, res) => {
-    res.send("Hello");
-});
 app.delete('/recipes/:id', (req, res) => {
     res.send("Hello");
 });
