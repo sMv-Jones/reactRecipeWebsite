@@ -48,3 +48,33 @@
     text-align: left;
     margin-top: 20px;
 }
+
+.recipe-item {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    flex-grow: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.delete-btn {
+    padding: 8px 16px;
+    background-color: #d63031;
+    max-width: 10vw;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+}
+
+.delete-btn:hover {
+    background-color: #b71c1c;
+}

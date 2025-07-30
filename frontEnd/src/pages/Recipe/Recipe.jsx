@@ -20,9 +20,11 @@ function Recipe() {
                 </form>
             </div>
             <div>
-                <h2 className="recipe-heading">Recipes</h2>
-                <RecipeCard title="Tea" description="Hot milk tea" ingredeint="Milk, Tea Powder" />
-                {/* RecipeCard components will go here */}
+                <div className="recipe-item">
+                    <RecipeCard title="Tea" description="Simple milk tea" ingredeint="Milk, Tea Powder" />
+                    <button className="delete-btn">Delete</button>
+                </div>
+
             </div>
         </div>
         </>
