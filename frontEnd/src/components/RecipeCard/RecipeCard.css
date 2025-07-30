@@ -1,0 +1,25 @@
+.recipe-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 75vw;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.recipe-card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2d3436;
+}
+
+.recipe-card-description {
+  margin-bottom: 10px;
+  color: #636e72;
+}
+
+.recipe-card-ingredient {
+  font-style: italic;
+  color: #0984e3;
+}

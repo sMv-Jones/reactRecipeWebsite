@@ -21,6 +21,7 @@ function Recipe() {
             </div>
             <div>
                 <h2 className="recipe-heading">Recipes</h2>
+                <RecipeCard title="Tea" description="Hot milk tea" ingredeint="Milk, Tea Powder" />
                 {/* RecipeCard components will go here */}
             </div>
         </div>
