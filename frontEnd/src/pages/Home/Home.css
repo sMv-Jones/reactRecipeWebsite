@@ -3,47 +3,78 @@
   padding: 40px;
   text-align: center;
   min-height: 80vh;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .home-title {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 30px;
 }
 
 .home-description {
   font-size: 1.2rem;
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 20vh;
-}
-.auth-link {
-  display: inline-block;
-  margin: 15px;
-  padding: 10px 25px;
-  background-color: rgba(255, 255, 255, .4);
-  color: rgb(95, 95, 95);
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  color: #444;
+  max-width: 640px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
 }
 
-.auth-link:hover {
-  background-color: #ececec;
+.auth-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.auth-box {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .signup-message {
-  margin-top: 10px;
-  font-size: 1.2 rem;
-  font-weight: bold;
-  font-family: 'Segoe UI', sans-serif;
-  text-decoration: solid;
+  font-size: 1.05rem;
+  color: #222;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.login-message {
+  font-size: 1.05rem;
+  color: #222;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+
+.signup-message span {
+  font-weight: 600;
   color: #333;
-  font-style: italic;
+}
+.login-message span {
+  font-weight: 600;
+  color: #333;
+}
+
+.auth-link {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #444;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.auth-link:hover {
+  background-color: #fff;
+  transform: translateY(-2px);
 }
