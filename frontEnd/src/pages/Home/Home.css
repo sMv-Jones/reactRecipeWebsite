@@ -3,7 +3,7 @@
   padding: 40px;
   text-align: center;
   min-height: 80vh;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, .1);
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   font-family: 'Segoe UI', sans-serif;
@@ -20,4 +20,30 @@
   color: #555;
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 20vh;
+}
+.auth-link {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 25px;
+  background-color: rgba(255, 255, 255, .4);
+  color: rgb(95, 95, 95);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.auth-link:hover {
+  background-color: #ececec;
+}
+
+.signup-message {
+  margin-top: 10px;
+  font-size: 1.2 rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  text-decoration: solid;
+  color: #333;
+  font-style: italic;
 }

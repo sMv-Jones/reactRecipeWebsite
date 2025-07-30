@@ -1,0 +1,21 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
