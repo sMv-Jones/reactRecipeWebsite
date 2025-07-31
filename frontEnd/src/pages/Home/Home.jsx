@@ -12,6 +12,8 @@ function Home() {
 
   useEffect(() => {
     const fetchRecipes = async () => {
+      if (!isAuthenicated)
+        return;
       try {
         const res = await axios.get("/recipes", {
           auth: {
@@ -30,7 +32,7 @@ function Home() {
     };
 
     fetchRecipes();
-  }, []);
+  });
 
   return (
     <div className="home-container">
@@ -66,13 +68,17 @@ function Home() {
           <p className="home-description">
             Hey, welcome back! We're glad to see you again. Dive in to explore new recipes or manage your personal collection. Happy cooking!
           </p>
+
           {
             loading ?
               <p>Loading...</p> :
               <>
                 <div className="recipe-list">
                   {recipes.length === 0 ? (
-                    <p>No recipes found.</p>
+                    <><p>Go create some recipes!!.</p>
+                    <NavLink to="/recipe" className="recipe-nav-link">
+                      Go to Recipes
+                    </NavLink></>
                   ) : (
                     recipes.map((recipe) => (
                       <RecipeCard

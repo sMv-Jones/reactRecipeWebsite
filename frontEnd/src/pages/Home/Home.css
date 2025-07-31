@@ -1,3 +1,21 @@
+.recipe-nav-link {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 32px;
+  background-color: #2d8659;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(45, 134, 89, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.recipe-nav-link:hover {
+  background-color: #226644;
+  transform: translateY(-2px) scale(1.03);
+}
 .home-container {
   margin: 20px;
   padding: 40px;
