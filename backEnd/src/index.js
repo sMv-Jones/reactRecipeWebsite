@@ -78,7 +78,6 @@ app.delete('/recipes/:id',basicAuth, async (req, res) => {
 });
 
 app.post('/recipes/login', async (req, res) => {
-    console.log("here")
   const { email, password } = req.body;
 
   if (!email || !password) {

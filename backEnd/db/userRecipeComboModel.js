@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const recipeSchema = new mongoose.Schema({
   recipeId: {
-    type: Number, // Timestamp-based ID
+    type: Number,
     required: true
   },
   title: {
@@ -10,7 +10,7 @@ const recipeSchema = new mongoose.Schema({
     required: true
   },
   ingredients: {
-    type: [String],
+    type: String,
     required: true
   },
   description: {
